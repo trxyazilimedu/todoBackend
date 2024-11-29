@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize("bkystodo", "bkystodo", "j47~s5i4I", {
-    host: "cloud.trxyazilim.com",
+const sequelize = new Sequelize("todo", "root", "sifre", {
+    host: "localhost",
     dialect: "mysql",
     logging: false, // Logları devre dışı bırakır
 });
