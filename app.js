@@ -1,10 +1,14 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 import todoRoutes from "./routes/todoRoutes.js";
 import sequelize from "./config/database.js";
 import { serveSwaggerDocs } from "./config/swagger.js";
 
 const app = express();
+
+// CORS middleware (Her yere izin ver)
+app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
